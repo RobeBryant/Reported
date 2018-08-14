@@ -26,3 +26,19 @@ BUSINESS APPLICATIONS
 * **Public Safety:** Reported can be used by citizens to protect the communities they live in, by sharing crime information
 
 * **Governments & Law Enforcement:** Law Enforcement agencies can leverage Reported to manage incoming tips on the go
+
+INSTALLATION
+---
+[Coming Soon]
+
+HOW TO USE?
+---
+[Coming Soon]
+
+CONTRIBUTE
+---
+[Coming Soon]
+
+CREDITS
+---
+[Coming Soon]
