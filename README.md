@@ -45,7 +45,23 @@ INSTALLATION
 [Coming Soon]
 
 HOW TO USE?
--------
+-------  
+
+### Demo  
+[Coming Soon!]
+
+### API Endpoints  
+
+Try to visit `http://localhost:2018/api` on your computer. You should see the following response:  
+
+```
+{
+    "Message": "Welcome To Reported API.."
+}
+```
+This simply means that the app is running properly and you have an **API endpoint** already configured, ready to use and you can expand upon.  
+
+All the other endpoints will be preceded by `/api/<endpoint-name>`  
 [Coming Soon]
 
 CONTRIBUTE
