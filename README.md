@@ -32,15 +32,15 @@ BUSINESS APPLICATIONS
 INSTALLATION
 -------
 
-######## Development Environment Setup  
+### Development Environment Setup  
 
-* `$ git clone https://github.com/watat83/Reported`
-* `$ cd Reported`
+* Clone the repo with `$ git clone https://github.com/watat83/Reported.git`
+* CD into the project folder with `$ cd Reported`
 * You'll now need a MongoDB to store data.
 * Make sure that your connection string is in a `./config/db.js` file by changing these values: `'mongodb://localhost/reported' || '<URL-remote-instance-mongo>'`
-* Now you can run these to start the app and visit localhost:2018 or localhost:2018 depending on your `server.js` configuration.
-* `$ npm install`
-* `$ npm start` or `nodemon server.js` or `node server.js`
+* Install all the dependencies with `$ npm install`
+* Start the app with `$ npm start` or `nodemon server.js` or `node server.js`
+* Visit `localhost:2018` or the corresponding URL, depending on your `server.js` configuration.
 
 [Coming Soon]
 
