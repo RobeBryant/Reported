@@ -1,0 +1,29 @@
+{
+  "name": "reported",
+  "version": "1.0.0",
+  "description": "Reported’s mission is to equip citizens and law enforcement officers with the right tool to help reduce non-life threatening crimes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watat83/Reported.git"
+  },
+  "keywords": [
+    "Reported",
+    "Crime",
+    "Law",
+    "Enforcement",
+    "Platform"
+  ],
+  "author": "Christian N",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watat83/Reported/issues"
+  },
+  "homepage": "https://github.com/watat83/Reported#readme",
+  "dependencies": {
+    "npm": "^6.3.0"
+  }
+}
