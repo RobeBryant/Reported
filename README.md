@@ -60,14 +60,14 @@ Try to visit `http://localhost:2018/api` on a web browser. You should see the fo
     "Message": "Welcome To Reported API.."
 }
 ```
-This simply means that the app is running properly and you 2 **API endpoint** already configured, ready to use for you can expand upon.  
+This simply means that the app is running properly and you have 2 **API endpoints** already configured, ready to use for you can expand upon.  
 
 All the other endpoints will be preceded by `/api/<endpoint-name>`  
 
-1. `/api/sfpd-incidents`: This endpoint returns a list of Incidents reported by the SFPD. The structure of a incident looks like this:  
+1. `/api/sfpd-incidents`: This endpoint returns an array of Incidents reported by the SFPD. The structure of a incident looks like this:  
 
 ```
-{
+[{
     "address": "0 Block of 6TH ST",
     "category": "ROBBERY",
     "date": "2018-05-15T00:00:00.000",
@@ -87,7 +87,10 @@ All the other endpoints will be preceded by `/api/<endpoint-name>`
     "time": "01:25",
     "x": "-122.41004163181597",
     "y": "37.781953653725715"
-}
+},
+{
+    ...
+}]
 ```
 [Coming Soon]
 

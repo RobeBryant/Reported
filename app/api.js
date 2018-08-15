@@ -21,7 +21,7 @@ apiRoutes.get('/', function (req,res) {
 apiRoutes.get('/sfpd-incidents', function (req,res) {
     // console.log('conv ', conv)
 
-    const config ={
+    const config = {
         "headers": {'X-App-Token': dataSFAPITOken},
         "Content-Type": "application/json"
     }
@@ -32,7 +32,7 @@ apiRoutes.get('/sfpd-incidents', function (req,res) {
         return axios
             .get(url, {
                 params:{
-                    $limit:1000,
+                    $limit:100,
                     $$app_token: dataSFAPITOken,
                     $order: 'date DESC'
                 }
