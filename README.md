@@ -8,7 +8,8 @@ Reported’s mission is to equip citizens and law enforcement officers with the 
 
 THE PROBLEM
 -------
-There is no unified, efficient and trusted way for citizens and law enforcement officers to share data about crime/incidents with each other online. 
+There is no unified, efficient and trusted way for citizens and law enforcement officers to share data about crime/incidents with each other online.  
+
 1. 911 service is often misused/abused by citizens
 2. Misallocation of resources is a result of those abuses
 3. Trust issues between Law Enforcement & the communities they serve
@@ -52,16 +53,42 @@ HOW TO USE?
 
 ### API Endpoints  
 
-Try to visit `http://localhost:2018/api` on your computer. You should see the following response:  
+Try to visit `http://localhost:2018/api` on a web browser. You should see the following response:  
 
 ```
 {
     "Message": "Welcome To Reported API.."
 }
 ```
-This simply means that the app is running properly and you have an **API endpoint** already configured, ready to use and you can expand upon.  
+This simply means that the app is running properly and you 2 **API endpoint** already configured, ready to use for you can expand upon.  
 
 All the other endpoints will be preceded by `/api/<endpoint-name>`  
+
+1. `/api/sfpd-incidents`: This endpoint returns a list of Incidents reported by the SFPD. The structure of a incident looks like this:  
+
+```
+{
+    "address": "0 Block of 6TH ST",
+    "category": "ROBBERY",
+    "date": "2018-05-15T00:00:00.000",
+    "dayofweek": "Tuesday",
+    "descript": "ROBBERY, BODILY FORCE",
+    "incidntnum": "180360835",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -122.410041631816,
+            37.781953653726
+        ]
+    },
+    "pddistrict": "SOUTHERN",
+    "pdid": "18036083503074",
+    "resolution": "ARREST, BOOKED",
+    "time": "01:25",
+    "x": "-122.41004163181597",
+    "y": "37.781953653725715"
+}
+```
 [Coming Soon]
 
 CONTRIBUTE

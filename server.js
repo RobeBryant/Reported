@@ -11,16 +11,29 @@ var morgan         = require('morgan');
 var cookieParser         = require('cookie-parser');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
+var favicon = require('serve-favicon')
 
 
 // configuration ===============================================================
 var configDB = require('./config/db.js');
 
 // connect to the database
-mongoose.connect(configDB.url); 
+
+mongoose.connect(configDB.url,{ useNewUrlParser: true },function(err,db){
+    if(err){
+        console.log(err);
+    }
+    else {
+        console.log('connected to ' + db);
+        db.close();
+    }
+  })
 	
 // set the static files location /public/img will be /img for users
 app.use(express.static(__dirname + '/public'));
+
+// set the favicon
+app.use(favicon('favicon.ico'));
 
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)
